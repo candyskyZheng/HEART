@@ -24,6 +24,8 @@ for x in range(10,100):
 	y_value5 = list(range(-x+110, int((45**2 - (x-55)**2)**(1/2)+100)))
 	n = len(y_value5)
 	x_value5 = [x]*n
+	plt.axes().get_xaxis().set_visible(False)
+	plt.axes().get_yaxis().set_visible(False)
 	plt.scatter(x_value5, y_value5, c = y_value5,cmap = plt.cm.cool, s=20)
 
 
@@ -31,9 +33,10 @@ for x in range(101,190):
 	y_value6 = list(range(x - 90, int((45**2 - (x-145)**2)**(1/2)+100)))
 	n = len(y_value6)
 	x_value6 = [x]*n
+	plt.axes().get_xaxis().set_visible(False)
+	plt.axes().get_yaxis().set_visible(False)
 	plt.scatter(x_value6, y_value6, c = y_value6,cmap = plt.cm.cool, s=20)
 
 
+
 plt.show()
-
-
